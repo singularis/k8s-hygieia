@@ -1,0 +1,15 @@
+apiVersion: v1
+data:
+  mongoadmin: admin
+  mongosvc: mongo-svc
+  mongoport: "27017"
+  mongouser: dashboarduser
+  apihost: hygieia-api-svc
+  apiport: "8080"
+  bamboo-server: http://bamboo-server-name.com
+  bamboo-user: hyg-user
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: hygieia-config
+  namespace: hyg
